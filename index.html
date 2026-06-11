@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Design System Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🧑‍🎨 Design System Builder</h1>
+  <p>Colors & Spacing Generator</p>
+</header>
+
+<div class="container">
+
+  <!-- COLORS -->
+  <div class="card">
+    <h2>🎨 Color Palette</h2>
+    <button onclick="generateColors()">Generate Colors</button>
+    <div class="palette" id="palette"></div>
+  </div>
+
+  <!-- SPACING -->
+  <div class="card">
+    <h2>📏 Spacing Scale</h2>
+    <button onclick="generateSpacing()">Generate Spacing</button>
+    <div id="spacing"></div>
+  </div>
+
+</div>
+
+<footer>
+  Built with ❤️ HTML, CSS, JS
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
