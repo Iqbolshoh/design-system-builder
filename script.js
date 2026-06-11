@@ -17,7 +17,8 @@ function generateColors(){
 
     box.onclick = () => {
       navigator.clipboard.writeText(color);
-      alert("Copied: " + color);
+      box.innerText = "Copied!";
+      setTimeout(() => box.innerText = color, 800);
     };
 
     palette.appendChild(box);
@@ -29,17 +30,18 @@ function generateSpacing(){
   const spacing = document.getElementById("spacing");
   spacing.innerHTML = "";
 
-  const sizes = [4,8,12,16,24,32,48,64];
+  const sizes = [4,8,12,16,24,32,40,48,64];
 
   sizes.forEach(size => {
     const div = document.createElement("div");
     div.className = "spacing-item";
-    div.style.width = size * 4 + "px";
-    div.innerText = size + "px";
+    div.style.width = size * 5 + "px";
+    div.innerText = `Spacing: ${size}px`;
 
     div.onclick = () => {
       navigator.clipboard.writeText(size + "px");
-      alert("Copied: " + size + "px");
+      div.innerText = "Copied!";
+      setTimeout(() => div.innerText = `Spacing: ${size}px`, 800);
     };
 
     spacing.appendChild(div);

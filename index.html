@@ -3,37 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Design System Builder</title>
+  <title>Design System Builder Pro</title>
+
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<div class="bg"></div>
+
 <header>
-  <h1>🧑‍🎨 Design System Builder</h1>
-  <p>Colors & Spacing Generator</p>
+  <div class="logo">🎨 Design System Builder</div>
+  <p>Build modern UI tokens instantly</p>
 </header>
 
-<div class="container">
+<main class="container">
 
   <!-- COLORS -->
-  <div class="card">
-    <h2>🎨 Color Palette</h2>
-    <button onclick="generateColors()">Generate Colors</button>
+  <section class="card">
+    <div class="card-header">
+      <h2>Color Palette</h2>
+      <button onclick="generateColors()">Generate</button>
+    </div>
     <div class="palette" id="palette"></div>
-  </div>
+  </section>
 
   <!-- SPACING -->
-  <div class="card">
-    <h2>📏 Spacing Scale</h2>
-    <button onclick="generateSpacing()">Generate Spacing</button>
+  <section class="card">
+    <div class="card-header">
+      <h2>Spacing Scale</h2>
+      <button onclick="generateSpacing()">Generate</button>
+    </div>
     <div id="spacing"></div>
-  </div>
+  </section>
 
-</div>
+</main>
 
 <footer>
-  Built with ❤️ HTML, CSS, JS
+  Built with ⚡ by Developer
 </footer>
 
 <script src="script.js"></script>
